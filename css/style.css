@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d8dfec;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 940px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h1{
+    color: #000;
+    font-size: 56px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.titulo h1:after,
+.titulo h1:before{
+    content: '';
+    height: 3px;
+    width: 200px;
+    background-color: black;
+    margin-top: 5px;
+    margin: 0 auto;
+    display: block;
+}
+.lista{
+    height: 60px;
+    width: 700px;
+    margin-top: 10px;
+    background-color: #dde8ed;
+    border: 4px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+}
+
+.lista p{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.icone{
+    margin-right: 20px;
+}
+.lista .icone img{
+    cursor: pointer;
+}
+
+.adTarefa{
+    width: 500px;
+    height: 60px;
+    margin-top: 80px;
+    
+    border: 6px solid #000;
+    background-color: #d8dfec;
+    display: flex;
+    justify-content: space-around;
+}
+
+.adTarefa input{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 0;
+    background-color: #d8dfec;
+    width: 70%;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.adTarefa input::placeholder{
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.completa{
+    text-decoration: line-through;
+    background-color: #c8cdd6;
+    box-shadow: 0 0 0 rgba(0, 0, 0);
+    
+}
+.button button{
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px 0;
+    background-color: #d8dfec;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border: 3px solid #000;
+    cursor: pointer;
+    display: none;
+}
+.button button:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #b6bbc4;
+}
+
+@media(max-width: 768px){
+    .button button{
+        display: block;
+    }
+
+    .titulo h1{
+        font-size: 46px;
+    }
+
+    .lista{
+        width: 600px; 
+    }
+
+    .adTarefa{
+        width: 400px;
+    }
+    
+    .adTarefa input::placeholder{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 621px){
+
+
+    .titulo h1{
+        font-size: 36px;
+    }
+
+    .lista{
+        width: 400px; 
+    }
+    .lista p{
+        font-size: 15px;
+    }
+
+    .adTarefa input{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 425px){
+
+
+    .titulo h1{
+        font-size: 26px;
+    }
+
+    .lista{
+        width: 300px;
+        height: 40px;
+    }
+
+    .icone{
+        margin-right: 0;
+    }
+    .icone img{
+        width: 35%;
+        
+    }
+
+    .adTarefa{
+        width: 300px;
+        height: 40px;
+        border: 4px solid #000;
+    }
+
+    .adTarefa input{
+        height: 40px;
+    }
+    
+    .adTarefa img{
+        width: 10%;
+    }
+
+    .adTarefa input::placeholder{
+        font-size: 15px;
+    }
+
+}
